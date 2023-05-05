@@ -9,14 +9,21 @@
 /* Begin PBXBuildFile section */
 		0D9C2F7F2A0476520036AF15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2F7E2A0476520036AF15 /* AppDelegate.swift */; };
 		0D9C2F812A0476520036AF15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2F802A0476520036AF15 /* SceneDelegate.swift */; };
-		0D9C2F832A0476520036AF15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2F822A0476520036AF15 /* ViewController.swift */; };
-		0D9C2F862A0476520036AF15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C2F842A0476520036AF15 /* Main.storyboard */; };
+		0D9C2F832A0476520036AF15 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2F822A0476520036AF15 /* RecipesViewController.swift */; };
 		0D9C2F892A0476520036AF15 /* Recipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2F872A0476520036AF15 /* Recipes.xcdatamodeld */; };
 		0D9C2F8B2A0476580036AF15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C2F8A2A0476580036AF15 /* Assets.xcassets */; };
 		0D9C2F8E2A0476580036AF15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C2F8C2A0476580036AF15 /* LaunchScreen.storyboard */; };
 		0D9C2F992A0476580036AF15 /* RecipesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2F982A0476580036AF15 /* RecipesTests.swift */; };
 		0D9C2FA32A0476580036AF15 /* RecipesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2FA22A0476580036AF15 /* RecipesUITests.swift */; };
 		0D9C2FA52A0476580036AF15 /* RecipesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2FA42A0476580036AF15 /* RecipesUITestsLaunchTests.swift */; };
+		0D9C2FB42A047C430036AF15 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2FB32A047C430036AF15 /* RecipeCell.swift */; };
+		0D9C2FB62A0486B80036AF15 /* RecipeFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2FB52A0486B80036AF15 /* RecipeFetcher.swift */; };
+		0D9C2FB82A0489410036AF15 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2FB72A0489410036AF15 /* Meal.swift */; };
+		0D9C2FBA2A048F870036AF15 /* UIImageView+Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2FB92A048F870036AF15 /* UIImageView+Fetcher.swift */; };
+		0D9C2FBC2A0491FC0036AF15 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2FBB2A0491FC0036AF15 /* DetailsViewController.swift */; };
+		0D9C2FBE2A04944A0036AF15 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2FBD2A04944A0036AF15 /* Recipe.swift */; };
+		0D9C2FC02A04CC1F0036AF15 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2FBF2A04CC1F0036AF15 /* ImageCache.swift */; };
+		0D9C2FC22A04DFCC0036AF15 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C2FC12A04DFCC0036AF15 /* RecipeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +47,7 @@
 		0D9C2F7B2A0476520036AF15 /* Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9C2F7E2A0476520036AF15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D9C2F802A0476520036AF15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0D9C2F822A0476520036AF15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0D9C2F852A0476520036AF15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D9C2F822A0476520036AF15 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		0D9C2F882A0476520036AF15 /* Recipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recipes.xcdatamodel; sourceTree = "<group>"; };
 		0D9C2F8A2A0476580036AF15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D9C2F8D2A0476580036AF15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,14 @@
 		0D9C2F9E2A0476580036AF15 /* RecipesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9C2FA22A0476580036AF15 /* RecipesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesUITests.swift; sourceTree = "<group>"; };
 		0D9C2FA42A0476580036AF15 /* RecipesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0D9C2FB32A047C430036AF15 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		0D9C2FB52A0486B80036AF15 /* RecipeFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFetcher.swift; sourceTree = "<group>"; };
+		0D9C2FB72A0489410036AF15 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		0D9C2FB92A048F870036AF15 /* UIImageView+Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Fetcher.swift"; sourceTree = "<group>"; };
+		0D9C2FBB2A0491FC0036AF15 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		0D9C2FBD2A04944A0036AF15 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		0D9C2FBF2A04CC1F0036AF15 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		0D9C2FC12A04DFCC0036AF15 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +115,13 @@
 		0D9C2F7D2A0476520036AF15 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				0D9C2FC72A058F3E0036AF15 /* Views */,
+				0D9C2FC62A058F080036AF15 /* Api */,
+				0D9C2FC52A058EF30036AF15 /* ViewModels */,
+				0D9C2FC42A058EDC0036AF15 /* Models */,
+				0D9C2FC32A058EC50036AF15 /* Controllers */,
 				0D9C2F7E2A0476520036AF15 /* AppDelegate.swift */,
 				0D9C2F802A0476520036AF15 /* SceneDelegate.swift */,
-				0D9C2F822A0476520036AF15 /* ViewController.swift */,
-				0D9C2F842A0476520036AF15 /* Main.storyboard */,
 				0D9C2F8A2A0476580036AF15 /* Assets.xcassets */,
 				0D9C2F8C2A0476580036AF15 /* LaunchScreen.storyboard */,
 				0D9C2F8F2A0476580036AF15 /* Info.plist */,
@@ -128,6 +145,50 @@
 				0D9C2FA42A0476580036AF15 /* RecipesUITestsLaunchTests.swift */,
 			);
 			path = RecipesUITests;
+			sourceTree = "<group>";
+		};
+		0D9C2FC32A058EC50036AF15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D9C2F822A0476520036AF15 /* RecipesViewController.swift */,
+				0D9C2FBB2A0491FC0036AF15 /* DetailsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0D9C2FC42A058EDC0036AF15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D9C2FB72A0489410036AF15 /* Meal.swift */,
+				0D9C2FBD2A04944A0036AF15 /* Recipe.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D9C2FC52A058EF30036AF15 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0D9C2FC12A04DFCC0036AF15 /* RecipeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0D9C2FC62A058F080036AF15 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				0D9C2FB92A048F870036AF15 /* UIImageView+Fetcher.swift */,
+				0D9C2FB52A0486B80036AF15 /* RecipeFetcher.swift */,
+				0D9C2FBF2A04CC1F0036AF15 /* ImageCache.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		0D9C2FC72A058F3E0036AF15 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D9C2FB32A047C430036AF15 /* RecipeCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +297,6 @@
 			files = (
 				0D9C2F8E2A0476580036AF15 /* LaunchScreen.storyboard in Resources */,
 				0D9C2F8B2A0476580036AF15 /* Assets.xcassets in Resources */,
-				0D9C2F862A0476520036AF15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +321,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D9C2F832A0476520036AF15 /* ViewController.swift in Sources */,
+				0D9C2FC02A04CC1F0036AF15 /* ImageCache.swift in Sources */,
+				0D9C2FB42A047C430036AF15 /* RecipeCell.swift in Sources */,
+				0D9C2F832A0476520036AF15 /* RecipesViewController.swift in Sources */,
+				0D9C2FBC2A0491FC0036AF15 /* DetailsViewController.swift in Sources */,
+				0D9C2FC22A04DFCC0036AF15 /* RecipeViewModel.swift in Sources */,
+				0D9C2FB82A0489410036AF15 /* Meal.swift in Sources */,
 				0D9C2F7F2A0476520036AF15 /* AppDelegate.swift in Sources */,
+				0D9C2FBA2A048F870036AF15 /* UIImageView+Fetcher.swift in Sources */,
 				0D9C2F812A0476520036AF15 /* SceneDelegate.swift in Sources */,
 				0D9C2F892A0476520036AF15 /* Recipes.xcdatamodeld in Sources */,
+				0D9C2FB62A0486B80036AF15 /* RecipeFetcher.swift in Sources */,
+				0D9C2FBE2A04944A0036AF15 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +369,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0D9C2F842A0476520036AF15 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D9C2F852A0476520036AF15 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0D9C2F8C2A0476580036AF15 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +506,6 @@
 				INFOPLIST_FILE = Recipes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +533,6 @@
 				INFOPLIST_FILE = Recipes/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
